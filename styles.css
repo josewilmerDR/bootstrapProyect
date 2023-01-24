@@ -9,3 +9,41 @@
     margin-top: 0px;
     margin-bottom: 10px;
 }
+
+.fa-camera,.fa-location-dot{
+    font-size: 0.75em;
+    padding: 7px;
+    background-color: rgb(236, 235, 235);
+    border-radius: 4px;
+}
+.fa-instagram{
+    font-size: 2.5em;
+    padding: 2px 10px 0px 0px;
+}
+.instagram{
+    font-weight: bold;
+}
+
+.fa-table-cells, .fa-tablet-button{
+    color: black;
+}
+.fa-table-cells:hover, .fa-tablet-button:hover{
+    color:blue;
+}
+.textoEnd{
+    text-align: right;
+}
+.textoLeft{
+    text-align: left;
+}
+
+.borderItem{
+    border: 1px solid rgb(215, 211, 211);
+}
+.paddingR{
+    text-align: end;
+    padding-right: 8px;
+}
+.textarea{
+    border-radius: 4px;
+}

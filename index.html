@@ -7,27 +7,60 @@
     <script src="https://kit.fontawesome.com/ab002dea77.js" crossorigin="anonymous"></script>
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Hello, world!</title>
   </head>
   <body>
    
-    <div class="row bg-light px-3 py-3" style="height: 60px;">
-      <div class="col-4">
-        <i class="fa-brands fa-instagram mx-3">Instagram</i>
-         <img style="height: 50px; width: auto;" src="/src/img/Instagram-Logo-No-Background.png">
+    <div class="row bg-light px-3 py-3 d-flex" style="height: 60px;">
+      <div class="col-8 d-flex">
+        <i class="fa-brands fa-instagram"></i><h2 class="instagram">Instragram</h2>
       </div>
-      <div class="col-4">
+      <div class="col-4 textoEnd">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create a new post
+        </button>
         
-      </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body textoLeft">
+                <p><strong>Caption:</strong></p>
+                <textarea class="textarea" name="post" id="" cols="60" rows="2"></textarea> <br>
+                <i class="fa-solid fa-camera"></i> <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="col-4">
-        
-      </div>
+        <!-- Example single danger button -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item logOut" href="#">Log out</a></li>
+          </ul>
+        </div>
+      </div>  
     </div>
   
-    <div class="d-flex justify-content-center bg-secondary">
+    <div class="d-flex justify-content-center bg-light">
       
       <ul class="nav nav-tabs mx-auto">
         
@@ -85,12 +118,12 @@
       </div>    
 
       <div class="tab-pane mx-auto" id="tab2">
-        <div class="d-center w-50 mx-auto border border-secondary pharagrapS pharagrapP">
+        <div class="d-center w-50 mx-auto borderItem pharagrapS pharagrapP">
           <div class="d-flex">
             <div class="w-50">
               <h4>My crazy dog spark</h4>
             </div>
-            <div class="text-right w-50 pr-2">
+            <div class="text-right w-50 paddingR">
               <p>08/26</p>
             </div>
           </div>
@@ -99,12 +132,12 @@
           <p class="pharagrapP">This is a example of very good photo that you can post on Instragram</p>
         </div>
 
-        <div class="d-center w-50 mx-auto border border-secondary pharagrapS pharagrapP">
+        <div class="d-center w-50 mx-auto borderItem pharagrapS pharagrapP">
           <div class="d-flex">
             <div class="w-50">
               <h4>The gratness of Croatia</h4>
             </div>
-            <div class="text-right w-50 pr-2">
+            <div class="text-right w-50 paddingR">
               <p>04/09</p>
             </div>
           </div>
@@ -113,12 +146,12 @@
           <p class="pharagrapP">This is a example of very good photo that you can post on Instragram</p>
         </div>
 
-        <div class="d-center w-50 mx-auto border border-secondary pharagrapS pharagrapP">
+        <div class="d-center w-50 mx-auto borderItem pharagrapS pharagrapP">
           <div class="d-flex">
             <div class="w-50">
               <h4>Amazin GOAL by Cristiano</h4>
             </div>
-            <div class="text-right w-50 pr-2">
+            <div class="text-end w-50 paddingR">
               <p>06/10</p>
             </div>
           </div>
@@ -131,10 +164,9 @@
     </div>
 
 
-  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
- 
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
